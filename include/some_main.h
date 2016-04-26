@@ -1,7 +1,8 @@
 #ifndef __SOME_MAIN_H_
 #define __SOME_MAIN_H_
 
-#define true (0)
-#define false (-1)
+extern int sleeptime;
+extern char * instruction;
+extern char * getinst;
 
 #endif

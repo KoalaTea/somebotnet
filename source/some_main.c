@@ -32,24 +32,6 @@ int main(int argc, char **argv){
 		dothings(instruction);
 		free(instruction);
 		sleep(sleeptime);
-/*
-		FILE *fp;
-		char *line = NULL;
-		size_t len = 0;
-		ssize_t read;
-	        fp = fopen("sample_file.txt", "r");
-		while((read = getline(&line, &len, fp)) != -1){
-			printf("%zu \n", read);
-			printf("%s \n", line);
-		}
-
-		fclose(fp);
-		if(line){
-			free(line);
-		}
-*/
-		//system("echo hi | wall");
-
 	}	
 
 	return EXIT_SUCCESS;

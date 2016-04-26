@@ -14,5 +14,4 @@
 "Connection: keep-alive\r\n" \
 "\r\n\r\n"
 
-extern char * getinst;
 #endif

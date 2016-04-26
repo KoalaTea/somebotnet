@@ -9,7 +9,5 @@
 #define debug		"no"
 #define cookie		"whyisthishere"
 #define delim		"\n"
-extern int sleeptime;
-extern char * instruction;
 
 #endif

@@ -56,12 +56,13 @@ char *str_replace(char *orig, char *rep, char *with) {
         orig += len_front + len_rep; // move to next "end of rep"
     }
     strcpy(tmp, orig);
+    free(tmp); //questionquestion
     return result;
 }
 
 void changetoinst(char * initinfo){
 
 	getinst = malloc(strlen(ccinstruct)-strlen("init.php")+strlen("instructions.php")-strlen("Iamagreatcookie")+strlen(cookie));
-        getinst = str_replace(ccinstruct, "init.php", "instructions.php");
-        getinst = str_replace(getinst, "Iamagreatcookie", cookie);
+        getinst = str_replace(ccinstruct, "Iamagreatcookie", cookie);
+	getinst = str_replace(getinst, "init.php", "instructions.php");
 }
